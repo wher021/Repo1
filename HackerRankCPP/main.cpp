@@ -27,7 +27,7 @@ int main()
 	mainRes = mainReader.GetResult();
 	
 	myThread.join();
-	int a,b;
+	int a,b,c;
 
 	cout << mainRes + threadRes << endl;
 
