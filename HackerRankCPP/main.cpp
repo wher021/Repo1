@@ -18,11 +18,11 @@ void threadRead(string fileName, string &res)
 int main()
 {
 	string threadRes = "";
-	string threadFileName = "../file2.txt";
+	string threadFileName = "/home/willy/gitLocal/PullProj/file2.txt";//"../file2.txt";
 	thread myThread(threadRead, threadFileName, std::ref(threadRes));
 
 	string mainRes = "";
-	StreamReader mainReader("../file1.txt");
+	StreamReader mainReader("/home/willy/gitLocal/PullProj/file1.txt");//("../file1.txt");
 	mainReader.Read();
 	mainRes = mainReader.GetResult();
 	

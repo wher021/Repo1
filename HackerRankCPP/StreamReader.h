@@ -8,7 +8,7 @@ class StreamReader
 public:
 	StreamReader(string fileName);
 	void Read();
-	string StreamReader::GetResult();
+	string GetResult();
 private:
 	std::ifstream stream;
 	string result;
@@ -38,3 +38,4 @@ string StreamReader::GetResult()
 {
 	return result;
 }
+
